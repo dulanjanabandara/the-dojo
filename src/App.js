@@ -6,6 +6,8 @@ import Login from "./pages/login/Login";
 import Project from "./pages/project/Project";
 import Signup from "./pages/signup/Signup";
 
+import Navbar from "./components/navbar/Navbar";
+
 import "./App.css";
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <div className="container">
+          <Navbar />
           <Switch>
             <Route exact path="/">
               <Dashboard />
