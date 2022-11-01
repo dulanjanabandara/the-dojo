@@ -6,9 +6,9 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import Login from "./pages/login/Login";
 import Project from "./pages/project/Project";
 import Signup from "./pages/signup/Signup";
-
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
+import OnlineUsers from "./components/onlineUsers/OnlineUsers";
 
 import "./App.css";
 
@@ -45,6 +45,7 @@ function App() {
               </Route>
             </Switch>
           </div>
+          {user && <OnlineUsers />}
         </BrowserRouter>
       )}
     </div>
